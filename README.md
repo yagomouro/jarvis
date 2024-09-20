@@ -1,2 +1,32 @@
-# Jarvis
-Smart voice assistant made with Python
+# Data Assistant (Jarvis) - Voice Interaction System
+
+A voice-controlled assistant to manage Excel databases and respond to user queries via audio.
+
+## Setup
+
+1. Clone the repository:
+   - `git clone https://github.com/yagomouro/jarvis.git`
+   - `cd jarvis`
+
+2. Install dependencies from `requirements.txt`:
+   - `pip install -r requirements.txt`
+
+3. Install FFmpeg (required for handling audio with `pydub`):
+   - **Windows**: Download from [FFmpeg](https://ffmpeg.org/download.html) and add it to your PATH.
+   - **Mac**: Run `brew install ffmpeg`
+   - **Linux**: Run `sudo apt install ffmpeg`
+
+## Running the Assistant
+
+1. Run the Python script:
+   - `python main.py`
+
+2. Use voice commands:
+   - To create a new database: Say `"Create a database"`
+   - To search for an existing database: Say `"Search for a database"`
+   - To exit: Say `"Exit"`
+
+## Notes
+
+- The program will automatically detect `.xlsx` files in the current directory (excluding temporary files).
+- Make sure your microphone is working properly as the assistant listens for commands in real time.
