@@ -5,6 +5,9 @@ import io
 import os
 import re
 import json
+import platform
+import pathlib
+import time
 import ollama
 import pandas as pd
 import speech_recognition as sr
@@ -325,3 +328,15 @@ class Menu:
 menu = Menu()
 
 menu.hello()
+
+while True:
+    text = audio_processor.get_transcript_audio()
+
+    if not text:
+        menu.error()
+        continue
+
+    if not menu.options(text):
+        break
+
+    menu.restart()
