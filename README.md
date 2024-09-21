@@ -16,6 +16,12 @@ A voice-controlled assistant to manage Excel databases and respond to user queri
    - **Mac**: Run `brew install ffmpeg`
    - **Linux**: Run `sudo apt install ffmpeg`
 
+4. Install Ollama (required for running the Gemma 2:2B model):
+   - Follow the installation steps from the official [Ollama documentation](https://ollama.com/download).
+
+5. Pull the Gemma 2:2B model:
+   - Run `ollama pull gemma2:2b` in your terminal.
+
 ## Running the Assistant
 
 1. Run the Python script:
